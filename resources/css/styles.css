@@ -148,6 +148,15 @@ button {
 }
 /* end hero banner image */
 
+/* information */
+.information {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+
 
 /* desktop styles */
 @media only screen and (min-width: 961px) {
@@ -212,25 +221,71 @@ button {
     width: 60%;
     height: auto;
     overflow: hidden;
-    padding: 1.5rem;
+    padding: 1.5rem 0 1.5rem 1.5rem;
   }
   .banner-image img {
     overflow: hidden;
   }
   .banner-info {
     width: 40%;
-    padding: 2rem 1rem;
+    padding: 2rem 1.5rem;
   }
   button {
-      display: block;
       font-size: .75rem;
-      text-decoration: none;
-      text-transform: uppercase;
-      color: #ffffff;
-      background-color: #607d8b;
-      padding: 1rem;
-      width: 100%;
-      margin-top: 1.5rem;
   }
+  /* end hero banner image */
 
+  /* information */
+  .quote {
+    width: 60%;
+    padding: 2rem 0 1.5rem 2rem;
+  }
+  .quote-image {
+    height: auto;
+    overflow: hidden;
+  }
+  .quote-image img {
+    width: 100%;
+    overflow: hidden;
+  }
+  .quote-info {
+    padding-top: 2rem;
+  }
+  .quote-info h2 {
+    text-transform: uppercase;
+  }
+  .quote-name {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: .75rem;
+  }
+  .quote-name span {
+    padding-top: 1rem;
+  }
+  .sidebar {
+    width: 40%;
+  }
+  .sidebar-section {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .sidebar-section img {
+    width: 35%;
+    height: auto;
+    padding: 1.5rem;
+  }
+  .sidebar-section-content {
+    padding-right: 1.5rem;
+  }
+  .sidebar-section:last-of-type {
+    background-color: #cfd8dc;
+  }
+  .sidebar-section span h3 {
+    padding-bottom: .5rem;
+  }
+  .sidebar-section p {
+    font-size: .75rem;
+  }
 }
