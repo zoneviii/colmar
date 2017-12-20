@@ -46,9 +46,36 @@ html {
 }
 
 body {
-  background: #FFFFFF;
+  background: #ffffff;
   font-family:'Open Sans', sans-serif;
+  color: #757575;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 3rem;
   color: #212121;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .75rem;
+  line-height: 1.5rem;
 }
 
 .site-container {
@@ -62,7 +89,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #ccc;
 }
 
 .logo {
@@ -79,21 +105,48 @@ nav {
 
 .navigation {
   width: 100%;
-  border: 1px solid #ccc;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1.5rem;
 }
 
-.navigation > li {
-  border: 1px solid #ccc;
-}
-
 .navigation-desktop {
   display: none;
 }
+/* end header */
 
+/* hero banner image */
+.banner {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #cfd8dc;
+}
+
+.banner-image {
+  height: 300px;
+  overflow: hidden;
+}
+.banner-image img {
+  width: 100%;
+}
+
+.banner-info {
+  padding: 2rem 1rem;
+}
+
+button {
+    display: block;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #607d8b;
+    padding: 1rem;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+/* end hero banner image */
 
 
 /* desktop styles */
@@ -102,8 +155,8 @@ nav {
     width: 960px;
     margin: 0 auto;
   }
+  /* desktop header */
   .logo {
-    border: 1px solid #ccc;
     height: 2rem;
     display: flex;
     justify-content: flex-start;
@@ -125,28 +178,59 @@ nav {
     display: none;
   }
   .navigation-desktop {
-    border: 1px solid #ccc;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
   }
   .navigation-desktop li {
-    border: 1px solid #ccc;
     padding: 0 1rem;
     font-family: 'Open Sans', sans-serif;
-    font-size: .9rem;
+    font-size: .75rem;
   }
   .navigation-desktop li:last-of-type {
     padding-right: 1.5rem;
-    font-family: 'Open Sans', sans-serif;
-    font-size: .9rem;
   }
   .navigation-desktop a{
     color: #757575;
   }
   .navigation-desktop a:link {
     text-decoration: none;
+  }
+  /* end desktop header */
+
+  /* hero banner image */
+  .banner {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #cfd8dc;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .banner-image {
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+    padding: 1.5rem 2rem;
+  }
+  .banner-image img {
+    overflow: hidden;
+  }
+  .banner-info {
+    width: 40%;
+    padding: 2rem 1rem;
+  }
+  button {
+      display: block;
+      font-size: .75rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #ffffff;
+      background-color: #607d8b;
+      padding: 1rem;
+      width: 100%;
+      margin-top: 1.5rem;
   }
 
 }
