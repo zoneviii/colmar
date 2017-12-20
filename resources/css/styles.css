@@ -1,0 +1,152 @@
+/* universal styles */
+@font-face {
+  font-family: 'Oswald';
+  src: url('./resources/fonts/Oswald-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('./resources/fonts/Oswald-Medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('./resources/fonts/Oswald-ExtraLight.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./resources/fonts/OpenSans-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./resources/fonts/OpenSans-Italic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./resources/fonts/OpenSans-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: #FFFFFF;
+  font-family:'Open Sans', sans-serif;
+  color: #212121;
+}
+
+.site-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* header */
+header {
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+
+.logo {
+  display: none;
+}
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navigation {
+  width: 100%;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+.navigation > li {
+  border: 1px solid #ccc;
+}
+
+.navigation-desktop {
+  display: none;
+}
+
+
+
+/* desktop styles */
+@media only screen and (min-width: 961px) {
+  .site-container {
+    width: 960px;
+    margin: 0 auto;
+  }
+  .logo {
+    border: 1px solid #ccc;
+    height: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 1.5rem;
+  }
+  .desktop-logo-bold {
+    font-family: 'Oswald' sans-serif;
+    font-weight: 500;
+  }
+  .desktop-logo-thin {
+    font-family: 'Oswald' sans-serif;
+    font-weight: 200;
+  }
+  nav {
+    justify-content: flex-end;
+  }
+  .navigation {
+    display: none;
+  }
+  .navigation-desktop {
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  .navigation-desktop li {
+    border: 1px solid #ccc;
+    padding: 0 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .9rem;
+  }
+  .navigation-desktop li:last-of-type {
+    padding-right: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .9rem;
+  }
+  .navigation-desktop a{
+    color: #757575;
+  }
+  .navigation-desktop a:link {
+    text-decoration: none;
+  }
+
+}
