@@ -154,8 +154,17 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #ccc;
+  padding: 2rem 0;
 }
+.quote {
+  display: none;
+}
+.desktop-image {
+  display: none; !important
+}
+/* end information */
+
+/* courses */
 
 
 /* desktop styles */
@@ -238,7 +247,9 @@ button {
   /* information */
   .quote {
     width: 60%;
-    padding: 2rem 0 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5rem 0 1.5rem;
   }
   .quote-image {
     height: auto;
@@ -249,7 +260,7 @@ button {
     overflow: hidden;
   }
   .quote-info {
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
   .quote-info h2 {
     text-transform: uppercase;
@@ -261,7 +272,7 @@ button {
     font-size: .75rem;
   }
   .quote-name span {
-    padding-top: 1rem;
+    padding-top: 3rem;
   }
   .sidebar {
     width: 40%;
@@ -271,10 +282,16 @@ button {
     justify-content: space-around;
     align-items: center;
   }
+  .desktop-image {
+    display: block; !important
+  }
+  .mobile-image {
+    display: none;
+  }
   .sidebar-section img {
     width: 35%;
     height: auto;
-    padding: 1.5rem;
+    padding: 1rem;
   }
   .sidebar-section-content {
     padding-right: 1.5rem;
@@ -288,4 +305,8 @@ button {
   .sidebar-section p {
     font-size: .75rem;
   }
+  /* end information */
+
+  /* courses */
+  
 }
