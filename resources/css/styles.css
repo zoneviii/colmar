@@ -48,7 +48,7 @@ html {
 body {
   background: #ffffff;
   font-family:'Open Sans', sans-serif;
-  color: #757575;
+  color: #455a64;
 }
 
 h1, h2, h3, h4 {
@@ -120,7 +120,7 @@ nav {
 .banner {
   width: 100%;
   margin: 0 auto;
-  background-color: #cfd8dc;
+  background-color: #ffcfc0;
 }
 
 .banner-image {
@@ -135,6 +135,11 @@ nav {
   padding: 2rem 1rem;
 }
 
+.banner-info h1 {
+  color: #ff5722;
+  line-height: 2.5rem;
+}
+
 .banner-info p {
   display: block;
 }
@@ -144,11 +149,14 @@ button {
     font-size: 1rem;
     text-decoration: none;
     text-transform: uppercase;
-    color: #ffffff;
-    background-color: #607d8b;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    color: #ff5722;
+    background-color: #ffffff;
     padding: 1rem;
     width: 100%;
     margin-top: 1.5rem;
+    border: none;
 }
 /* end hero banner image */
 
@@ -185,18 +193,22 @@ button {
   padding-left: 1rem;
 }
 
-.sidebar-section-content p {
+.sidebar-section-content > p {
   display: block;
 }
 
-.sidebar-section h3 {
+.sidebar-section > h3 {
   letter-spacing: .1rem;
 }
 
-.sidebar-section a:link, a:visited {
+.sidebar-section a {
   text-decoration: none;
   color: #ff5722;
   text-transform: uppercase;
+}
+
+.sidebar-section a:visited {
+  color: #ff5722;
 }
 
 .sidebar-section a:hover {
@@ -247,6 +259,11 @@ button {
   text-align: center;
   padding: 2rem 0;
 }
+
+.thesis-video-content {
+  display: none;
+}
+
 .thesis-sidebar {
   display: none;
 }
@@ -265,22 +282,14 @@ footer {
   padding-left: 1.5rem;
 }
 
+.footer-item p {
+  display: block;
+}
+
 .footer-links {
-  display: flex;
+  display: none;
 }
-
-.footer-link-item a {
-  text-decoration: none;
-  text-align: center
-}
-
-.footer-link-item a:link, a:visited {
-  color: #607d8b;
-}
-
-.footer-link-item a:hover {
-  color: #ff5722;
-}
+/* end footer */
 
 
 /* desktop styles */
@@ -300,10 +309,14 @@ footer {
   .desktop-logo-bold {
     font-family: 'Oswald' sans-serif;
     font-weight: 500;
+    font-size: 1.25rem;
+    color: #000000;
   }
   .desktop-logo-thin {
     font-family: 'Oswald' sans-serif;
     font-weight: 200;
+    font-size: 1.25rem;
+    color: #000000;
   }
   nav {
     justify-content: flex-end;
@@ -316,20 +329,27 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
+    text-decoration: none;
+  }
+  .navigation-desktop a {
+    text-decoration: none;
+    text-transform: uppercase;
   }
   .navigation-desktop li {
     padding: 0 1rem;
     font-family: 'Open Sans', sans-serif;
     font-size: .75rem;
+    color: #455a64;
   }
   .navigation-desktop li:last-of-type {
     padding-right: 1.5rem;
   }
-  .navigation-desktop a{
-    color: #757575;
+
+  .navigation-desktop a:active {
+    color: #455a64;
   }
-  .navigation-desktop a:link {
-    text-decoration: none;
+  .navigation-desktop a:hover {
+    color: #ff5722;
   }
   /* end desktop header */
 
@@ -337,7 +357,6 @@ footer {
   .banner {
     width: 100%;
     margin: 0 auto;
-    background-color: #cfd8dc;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -355,8 +374,11 @@ footer {
     width: 40%;
     padding: 2rem 1.5rem;
   }
+  .banner-info p {
+    padding: 0;
+  }
   button {
-      font-size: .75rem;
+      font-size: 1rem;
   }
   /* end hero banner image */
 }
@@ -426,7 +448,16 @@ footer {
   }
   .sidebar-section-content p {
     display: block;
+    padding: 0;
+    font-size: .65rem;
+    line-height: 1rem;
+  }
+  .sidebar-section-content a {
     font-size: .75rem;
+    line-height: 2rem;
+  }
+  .sidebar-section-content a:link, a:visited {
+    color: #ff5722;
   }
   /* end information */
 
@@ -470,6 +501,7 @@ footer {
     font-size: .6rem;
     line-height: .75rem;
     color: #607d8b;
+    padding: 0;
   }
   .courses-block h4 {
     display: block;
@@ -490,6 +522,9 @@ footer {
   .video {
     width: 60%;
     padding: 0 1.5rem;
+  }
+  .thesis-video-content {
+    display: block;
   }
   .thesis-video-content h3, p {
     display: block;
@@ -519,5 +554,19 @@ footer {
   }
   .thesis-blocks h3 {
     line-height: 1.5rem;
+  }
+  .footer-links {
+    display: flex;
+  }
+  .footer-link-item a {
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .footer-link-item a:link, a:visited {
+    color: #607d8b;
+  }
+  .footer-link-item a:hover {
+    color: #ff5722;
   }
 }
