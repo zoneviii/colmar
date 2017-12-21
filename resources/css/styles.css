@@ -154,7 +154,6 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 0;
 }
 .quote {
   display: none;
@@ -162,10 +161,68 @@ button {
 .desktop-image {
   display: none; !important
 }
+
+.sidebar {
+  width: 100%;
+}
+
+.sidebar-section {
+  padding: 1rem;
+}
+
+.sidebar-section img {
+  width: 100%;
+  height: auto;
+}
+
+.sidebar-section-content {
+  padding-left: 1rem;
+}
+
+.sidebar-section h3 {
+  letter-spacing: .15rem;
+  text-transform: uppercase;
+}
+
+.sidebar-section a:link, a:visited {
+  text-decoration: none;
+  color: #ff5722;
+  text-transform: uppercase;
+}
+
+.sidebar-section a:hover {
+  color: #455a64;
+}
+
 /* end information */
 
 /* courses */
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+.course-image {
+  display: none;
+}
+.courses-block {
+  background-color: #455a64;
+  color: #cfd8dc;
+  padding: 1rem 0 1.5rem 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  border: 1px solid #ccc;
+}
 
+.courses-block span {
+  padding: 0;
+}
+
+.courses-block p {
+  display: none;
+}
 
 /* desktop styles */
 @media only screen and (min-width: 961px) {
@@ -244,6 +301,12 @@ button {
   }
   /* end hero banner image */
 
+  /* courses */
+
+}
+
+/* tablet styles */
+@media only screen and (min-width: 600px) {
   /* information */
   .quote {
     width: 60%;
@@ -307,6 +370,4 @@ button {
   }
   /* end information */
 
-  /* courses */
-  
 }
